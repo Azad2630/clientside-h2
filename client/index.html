@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mcc</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#1-box" class="scroll-link">hovedret</a></li>
+        <li><a href="#2-box" class="scroll-link">tilbehør</a></li>
+        <li><a href="#3-box" class="scroll-link">drikkelse </a></li>
+        <li><a href="#4-box" class="scroll-link">dessert</a></li>
+        <li><a href="#5-box" class="scroll-link">bestilling </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="order-number" style="font-size: x-large;">Current Order Number: <span id="orderNumber">1</span></div>
+      <div class="box" id="1-box">
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 1">
+            <p>Hamburger</p>
+            <button onclick="addItem('Hamburger', 10)">Hamburger ($10)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 2">
+            <p>Cheeseburger</p>
+            <button onclick="addItem('Cheeseburger', 12)">Cheeseburger ($12)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 3">
+        <p>Chickenburger</p>
+        <button onclick="addItem('Chickenburger', 15)">Chickenburger ($15)</button>
+        </div>
+      </div>
+      <div class="box" id="2-box">
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 4">
+            <p>4x Nuggets</p>
+            <button onclick="addItem('4x Nuggets', 12)">4x Nuggets ($12)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 5">
+            <p>French Fries</p>
+            <button onclick="addItem('French Fries', 7)">French Fries ($7)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 6">
+            <p>3x Hot Wings</p>
+            <button onclick="addItem('3x Hot Wings', 14)">3x Hot Wings ($14)</button>
+        </div>
+      </div>
+      <div class="box" id="3-box">
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 7">
+            <p>Cola</p>
+            <button onclick="addItem('Cola', 9)">Cola ($9)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 8">
+            <p>Fanta</p>
+            <button onclick="addItem('Fanta', 9)">Fanta ($9)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 9">
+            <p>Sprite</p>
+            <button onclick="addItem('Sprite', 9)">Sprite ($9)</button>
+        </div>
+      </div>
+      <div class="box" id="4-box">
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 10">
+            <p>Fruit</p>
+            <button onclick="addItem('Fruit', 5)">Fruit ($5)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 11">
+            <p>Cake</p>
+            <button onclick="addItem('Cake', 22)">Cake ($22)</button>
+        </div>
+        <div class="sub-box">
+            <img src="pict\NoPic.png" alt="Billede 12">
+            <p>Ice Cream</p>
+            <button onclick="addItem('Ice Cream', 8)">Ice Cream ($8)</button>
+        </div>
+      </div>
+      
+      <div class="box" id="5-box">
+        <div class="sub-box" id="order-summary">
+            <div class="order" style="text-align: center;">
+              <h2>Order:</h2>
+              <h5>Click item to remove</h5>
+              <ul id="orderList"></ul>
+              <p>Total Price: $<span id="totalPrice">0.00</span></p>
+              <button class="button" onclick="cancelOrder()">Cancel Order</button>
+              <button class="button" onclick="confirmOrder()">Confirm Order</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <center>
+  <div class="total-orders" >
+    <h2>Total Orders:</h2>
+    <p>Total: $<span id="totalOrders">0.00</span></p>
+    <div id="individualOrders"></div>
+  </div>
+  </center>
+  <footer>
+    <p>hello</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
