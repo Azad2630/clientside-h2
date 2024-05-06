@@ -12,15 +12,16 @@
       <ul>
         <li><a href="#1-box" class="scroll-link">hovedret</a></li>
         <li><a href="#2-box" class="scroll-link">tilbehør</a></li>
-        <li><a href="#3-box" class="scroll-link">drikkelse </a></li>
+        <li><a href="#3-box" class="scroll-link">drikkelse</a></li>
         <li><a href="#4-box" class="scroll-link">dessert</a></li>
-        <li><a href="#5-box" class="scroll-link">bestilling </a></li>
+        <li><a href="#5-box" class="scroll-link">bestilling</a></li>
       </ul>
     </nav>
   </header>
-  <main style="background-color: #ffea00;">
+  <main>
     <div class="container">
       <div class="order-number" style="font-size: x-large;">Current Order Number: <span id="orderNumber">1</span></div>
+      <h2>hovedret</h2>
       <div class="box" id="1-box">
         <div class="sub-box">
             <img src="pict\NoPic.png" alt="Billede 1">
@@ -38,6 +39,7 @@
         <button onclick="addItem('Chickenburger', 15)">Chickenburger ($15)</button>
         </div>
       </div>
+      <h2>tilbehør</h2>
       <div class="box" id="2-box">
         <div class="sub-box">
             <img src="pict\NoPic.png" alt="Billede 4">
@@ -55,6 +57,7 @@
             <button onclick="addItem('3x Hot Wings', 14)">3x Hot Wings ($14)</button>
         </div>
       </div>
+      <h2>drikkelse</h2>
       <div class="box" id="3-box">
         <div class="sub-box">
             <img src="pict\NoPic.png" alt="Billede 7">
@@ -72,6 +75,7 @@
             <button onclick="addItem('Sprite', 9)">Sprite ($9)</button>
         </div>
       </div>
+      <h2>dessert</h2>
       <div class="box" id="4-box">
         <div class="sub-box">
             <img src="pict\NoPic.png" alt="Billede 10">
@@ -105,7 +109,7 @@
     </div>
   </main>
   <center>
-  <div class="total-orders" style="background-color: #ffea00;">
+  <div class="total-orders">
     <h2 >Total Orders:</h2>
     <p>Total: $<span id="totalOrders">0.00</span></p>
     <div id="individualOrders"></div>
